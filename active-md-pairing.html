@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ΔCTIVE-MD</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #00ffcc;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .box {
+      background: #111;
+      padding: 30px;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 0 20px #00ffcc;
+    }
+    input {
+      padding: 10px;
+      width: 200px;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #00ffcc;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00ccaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>ΔCTIVE-MD</h1>
+    <p>PAIR YOUR DEVICE</p>
+
+    <input type="text" id="code" placeholder="Enter pairing code">
+    <br>
+    <button onclick="pair()">PAIR NOW</button>
+  </div>
+
+  <script>
+    function pair(){
+      let code = document.getElementById("code").value;
+      alert("Pairing code: " + code);
+    }
+  </script>
+
+</body>
+</html>
